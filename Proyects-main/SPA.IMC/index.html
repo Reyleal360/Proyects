@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This web application, developed with HTML, CSS, and JavaScript, aims to calculate a person's Body Mass Index (BMI) based on their weight and height. It provides a simple and intuitive interface so users can quickly obtain their results and learn their classification based on the value obtained."
+    />
+    <meta name="keywords" content="imc,calculadora" />
+    <meta
+      name="sitedomain"
+      content="https://github.com/Reyleal360/SPA.IMC/tree/develop"
+    />
+    <meta name="organization" content="Reyleal360" />
+    <meta name="author" content="Reinaldo Andres Leal Brochero" />
+    <meta name="designer" content="Reinaldo Andres Leal Brochero" />
+    <meta name="copyright" content="© 2025 Reyleal360. All rights reserved" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="15days" />
+    <link rel="stylesheet" href="./src/css/styless.css" />
+    <title>SPA_IMC</title>
+  </head>
+  <body>
+    <header>
+      <h1>Imc</h1>
+    </header>
+
+    <main>
+      <form name="">
+        <label for="Weight">please,write your weight</label>
+        <input
+          type="text"
+          name="weight"
+          id="kg"
+          maxlength="30"
+          placeholder="Weight"
+          required
+        />
+        <br />
+        <label for="height">please,write your height(m)</label>
+        <input
+          type="text"
+          name="height"
+          id="m"
+          maxlength="30"
+          placeholder="height"
+          required
+        />
+        <br />
+        <button id="calc" type="button" onclick="calculo()">Calcular</button>
+        <p>IMC: <span id="imc"></span></p>
+        <p>Lectura <span id="Lectura"></span></p>
+        <table>
+          <thead>
+            <tr style="background-color: darkorchid">
+              <td>classification</td>
+              <td>Imc(kg/m2)</td>
+            </tr>
+          </thead>
+          <tr id="bp">
+            <td>Bajo peso</td>
+            <td>18.50</td>
+          </tr>
+          <tr id="ds">
+            <td>delgadez severa</td>
+            <td>16</td>
+          </tr>
+          <tr id="dm">
+            <td>delgadez moderada</td>
+            <td>16.0 -16.99</td>
+          </tr>
+          <tr id="da">
+            <td>delgadez aceptable</td>
+            <td>17.00-18.49</td>
+          </tr>
+          <tr id="n">
+            <td>normal</td>
+            <td>18.50 - 24.99</td>
+          </tr>
+          <tr id="sp">
+            <td>sobrepeso</td>
+            <td>25.00</td>
+            </tr>
+            <tr id="o">
+              <td>obesidad</td>
+              <td>30.00</td>
+              </tr>
+        </table>
+      </form>
+    </main>
+
+    <footer></footer>
+
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
